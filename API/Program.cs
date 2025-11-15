@@ -67,11 +67,7 @@ builder.Services.AddAuthorizationBuilder()
 
 
 var app = builder.Build();
-app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins(
-   
-    "http://localhost:4200", 
-    "https://localhost:4200", 
-    "https://agreeable-bay-0c7a33900.3.azurestaticapps.net"));
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

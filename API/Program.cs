@@ -68,7 +68,7 @@ builder.Services.AddAuthorizationBuilder()
 
 var app = builder.Build();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins(
-    "https://datingappapi-gfekgkgwbbgwczdh.canadacentral-01.azurewebsites.net",
+    "https://agreeable-bay-0c7a33900.3.azurestaticapps.net",
     "http://localhost:4200", 
     "https://localhost:4200"));
 app.UseHttpsRedirection();
